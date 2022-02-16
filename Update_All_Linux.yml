@@ -1,0 +1,16 @@
+---
+- name: Update Arch
+  hosts: Arch
+  tasks:
+    - name: pacman update
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+- name: Update Debian
+  hosts: Debian
+  tasks:
+    - name: apt update
+      apt:
+        update_cache: yes
+        upgrade: yes
