@@ -6,6 +6,7 @@
       pacman:
         update_cache: yes
         upgrade: yes
+      async: 45
 
 - name: Update Debian
   hosts: Debian
@@ -14,3 +15,4 @@
       apt:
         update_cache: yes
         upgrade: yes
+      async: 45
